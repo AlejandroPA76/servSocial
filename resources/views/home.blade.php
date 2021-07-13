@@ -58,7 +58,7 @@
                                 <td>
         <a href="{{route('editar.producto', $producto->id)}}" class="btn btn-info btn-sm">Editar</a>
 
-         <a href="javascript: document.getElementById('delete-{{$producto->id}}').submit()" class="btn btn-danger btn-sm">Eliminar</a>
+         <a href="javascript: document.getElementById('delete-{{$producto->id}}').submit()" class="btn btn-danger btn-sm" onclick="return confirm('deseas borrar?')">Eliminar</a>
             <form id=delete-{{$producto->id}} action="{{route('eliminar.producto', $producto->id)}}" method="POST">
                                         @method('delete')
                                         @csrf

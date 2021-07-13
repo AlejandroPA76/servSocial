@@ -56,6 +56,7 @@ class HomeController extends Controller
         $producto = Producto::findOrFail($id);
         $producto->delete();
         //return $producto;
+        Storage::delete('public/'.$producto->imagen);
         return redirect()->route('home')->with('info','Se elimino el producto');
 
     }
