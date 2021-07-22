@@ -28,6 +28,10 @@
                         </div>
             
                         <div class="col-12">
+                              <input type="hidden" class="form-control" id="tipo" name="tipo" value="3">
+                        </div>
+
+                        <div class="col-12">
                             <label>Contrasena</label>
                              <input id="password" type="password" class="form-control @error('password') is-invalid @enderror" name="password" required autocomplete="new-password">
                              @error('password')
