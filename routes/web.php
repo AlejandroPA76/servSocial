@@ -3,6 +3,9 @@
 use Illuminate\Support\Facades\Route;
 use Illuminate\Http\Request;
 
+use App\Http\Controllers\JefeController;
+use App\Http\Controllers\UserController;
+
 Auth::routes();
 Route::get('/', function(){
     return view('index');
@@ -20,3 +23,9 @@ Route::delete('products/{id}',[App\Http\Controllers\HomeController::class, 'elim
 Route::get('products/{id}/edit',[App\Http\Controllers\HomeController::class, 'editar'])->name('editar.producto');
 
 Route::put('products/{id}',[App\Http\Controllers\HomeController::class, 'actualizar'])->name('actualizar.producto');
+
+
+
+Route::resource('/jefe',JefeController::class);
+
+Route::resource('/usuario',UserController::class);
