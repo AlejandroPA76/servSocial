@@ -14,6 +14,11 @@
   </div>
 
   <div class="form-group">
+   
+    <input type="hidden" class="form-control" name="responsable" value="{{auth()->user()->name}}">
+  </div>
+
+  <div class="form-group">
     <label for="">Nombre del producto:</label>
     <input type="text" class="form-control" name="nombre">
   </div>

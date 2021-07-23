@@ -86,46 +86,6 @@
 
     <div class="row mx-auto p-3">
    
-            <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 col-xl-4">
-                <div class="card ">
-                 <img src=" asset('storage').'/'.$producto->imagen"/>
-    
-                    <div class="card-block">
-                        <h4 class="card-title">Area Administiva</h4>
-                        <p class="card-text">Each merged squad salts the wild porter. Should the charmed church dodge a
-                            camera? The gown litters the rhyme. Another discrete elevator defects over the target.</p>
-                        <a href="" class="btn btn-success">Button</a>
-                    </div>
-                </div>
-            </div>
-        
-         <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 col-xl-4">
-                <div class="card ">
-                 <img src=" asset('storage').'/'.$producto->imagen"/>
-    
-                    <div class="card-block">
-                        <h4 class="card-title">Area informatica</h4>
-                        <p class="card-text">Each merged squad salts the wild porter. Should the charmed church dodge a
-                            camera? The gown litters the rhyme. Another discrete elevator defects over the target.</p>
-                        <a href="" class="btn btn-success">Button</a>
-                    </div>
-                </div>
-            </div>
-
-             <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 col-xl-4">
-                <div class="card ">
-                 <img src=" asset('storage').'/'.$producto->imagen"/>
-    
-                    <div class="card-block">
-                        <h4 class="card-title">Area de control</h4>
-                        <p class="card-text">Each merged squad salts the wild porter. Should the charmed church dodge a
-                            camera? The gown litters the rhyme. Another discrete elevator defects over the target.</p>
-                        <a href="" class="btn btn-success">Button</a>
-                    </div>
-                </div>
-            </div>
-        </div>
- 
 
 </body>
 </html>

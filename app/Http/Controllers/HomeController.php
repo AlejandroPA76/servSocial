@@ -40,6 +40,7 @@ class HomeController extends Controller
 
         $newProducto = new Producto;
         $newProducto->codigo = $request->input('codigo');
+        $newProducto->responsable = $request->input('responsable');
         $newProducto->nombre = $request->input('nombre');
         $newProducto->descripcion = $request->input('descripcion');
         $newProducto->precio=$request->input('precio');

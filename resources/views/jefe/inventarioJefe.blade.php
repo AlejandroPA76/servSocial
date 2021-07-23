@@ -6,8 +6,8 @@
         <div class="col-md-11">
             <div class="card">
                 <div class="card-header">
-                    <a class="btn btn-primary" href="{{route('agregar.producto')}}">Agregar Producto</a>
-                    <a class="btn btn-primary" href="{{route('inicio')}}">Enviar solicitud</a>
+                    <a class="btn btn-primary" href="{{route('jefe.index')}}">solicitudes</a>
+                    <a class="btn btn-primary" href="{{route('inv')}}">Inventario</a>
                 </div>
 
                 <div class="card-body">
@@ -20,7 +20,7 @@
                    </div>
                     @endif
                     <table class="table">
-                          <thead>
+                          <thead class="thead-dark">
                             <tr>
             
                               <th >Codigo</th>
@@ -30,12 +30,11 @@
                               <th >Precio</th>
                               <th >Stock</th>
                               <th >Imagen</th>
-                              <th >accion</th>
                             </tr>
                           </thead>
                           <tbody>
                             @foreach($products as $producto)
-                            <tr>
+                            <tr class="thead-light">
 
                                 <td>
                                     {{$producto->codigo}}
@@ -61,15 +60,7 @@
          <img src="{{ asset('storage').'/'.$producto->imagen}}" alt="" width="100">
                                     
                                 </td>
-                                <td>
-        <a href="{{route('editar.producto', $producto->id)}}" class="btn btn-info btn-sm">Editar</a>
-
-         <a href="javascript: document.getElementById('delete-{{$producto->id}}').submit()" class="btn btn-danger btn-sm" onclick="return confirm('deseas borrar?')">Eliminar</a>
-            <form id=delete-{{$producto->id}} action="{{route('eliminar.producto', $producto->id)}}" method="POST">
-                                        @method('delete')
-                                        @csrf
-                                    </form>
-                                </td>
+    
                                  
                             </tr>
                             @endforeach

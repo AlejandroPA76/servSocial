@@ -1,7 +1,7 @@
 <?php
 
 namespace App\Http\Controllers;
-
+use App\Models\Producto;
 use Illuminate\Http\Request;
 use Illuminate\Http\Middleware\Jefe;
 
@@ -21,9 +21,14 @@ class JefeController extends Controller
 
     public function index()
     {
-        return view('homeJefe');
+        
+        return view('jefe.homeJefe');
     }
 
+    public function inventario(){
+        $products = Producto::orderBy('created_at','desc')->get();
+        return view('jefe.inventarioJefe', compact('products'));
+       }
     /**
      * Show the form for creating a new resource.
      *
