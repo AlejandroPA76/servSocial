@@ -7,7 +7,7 @@
             <div class="card">
                 <div class="card-header">
                     <a class="btn btn-primary" href="{{route('agregar.producto')}}">Agregar Producto</a>
-                    <a class="btn btn-primary" href="{{route('inicio')}}">Enviar</a>
+                    <a class="btn btn-primary" href="{{route('inicio')}}">Solicitar</a>
                 </div>
 
                 <div class="card-body">

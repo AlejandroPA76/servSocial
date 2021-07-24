@@ -25,9 +25,9 @@
                           <thead class="thead-dark">
                             <tr>
             
-                              <th >Codigo</th>
-                              <th >Responsable</th>
-                              <th >Producto</th>
+                              <th >id</th>
+                              <th >nombre</th>
+                              <th >rol</th>
                               <th >Descripcion</th>
                               <th >Precio</th>
                               <th >Stock</th>
