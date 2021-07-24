@@ -28,5 +28,6 @@ Route::put('products/{id}',[App\Http\Controllers\HomeController::class, 'actuali
 
 Route::resource('/jefe',JefeController::class);
 Route::get('inventario', [App\Http\Controllers\JefeController::class, 'inventario'])->name('inv');
+Route::get('integrantes', [App\Http\Controllers\JefeController::class, 'integrantes'])->name('int');
 
 Route::resource('/usuario',UserController::class);

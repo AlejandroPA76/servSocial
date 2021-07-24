@@ -15,7 +15,9 @@ class JefeController extends Controller
 
     public function __construct(){
         $this->middleware('auth');
-        $this->middleware('jefe',['only'=>'index']);
+        $this->middleware('jefe',['only'=>'index','inventario','integrantes']);
+        $this->middleware('jefe',['only'=>'inventario']);
+        $this->middleware('jefe',['only'=>'integrantes']);
     }
 
 
@@ -29,6 +31,11 @@ class JefeController extends Controller
         $products = Producto::orderBy('created_at','desc')->get();
         return view('jefe.inventarioJefe', compact('products'));
        }
+
+    public function integrantes(){
+        return view('jefe.integrantes');
+       }
+          
     /**
      * Show the form for creating a new resource.
      *
